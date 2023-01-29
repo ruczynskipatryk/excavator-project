@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usługi Mini Koparka Argon</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navigation with links to specific page elements. -->
+    <nav>
+      <img class="logo" src="Argon Darcy.png" alt="Logo firmy Argon przedstawiajace mini koparke" />
+      <ul>
+        <li><a href="index.html#main" class="nav-item">Strona główna</a></li>
+        <li><a href="index.html#about" class="nav-item">Nasze prace</a></li>
+        <li><a href="index.html#offer" class="nav-item">Cennik</a></li>
+        <li><a href="index.html#contact" class="nav-item">Kontakt</a></li>
+      </ul>
+
+      <button class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+    </nav>
+    <!--Section header with photo and main heading. -->
+    <header id="main">
+      <h1>MINI KOPARKA <span>Firma Argon</span></h1>
+      <img class="main-photo" src="main.png" alt="Zdjęcie kopiacej mini koparki">
+    </header>
+    <!--Section about with work-->
+    <div id="about">
+      <h3>Wykonane prace</h3>
+        <div id="slider">
+          <div id="top-row">
+            <img class="arrow arrow-left" id="arrow-left" src="arrow-left.png" alt="" />
+            <div id="slides-container">
+              <img id = "slide1" class="slide active" src="./img/1.jpeg"/>
+              <img id = "slide2" class="slide" src="./img/2.jpeg" />
+              <img id = "slide3" class="slide" src="./img/3.jpeg" />
+              <img id = "slide4" class="slide" src="./img/4.jpeg"/>
+              <img id = "slide5" class="slide" src="./img/5.jpeg" />
+              <img id = "slide6" class="slide" src="./img/6.jpeg" />
+              <img id = "slide7" class="slide" src="./img/7.jpeg"/>
+              <img id = "slide8" class="slide" src="./img/8.jpeg" />
+              <img id = "slide9" class="slide" src="./img/9.jpeg" />
+            </div>
+            <img class="arrow arrow-right" id="arrow-right" src="arrow-right.png" alt="" />
+          </div>
+          <div id="bottom-row">
+            <div id="dots">
+              <div id = "dot1" class="dot"></div>
+              <div id = "dot2" class="dot"></div>
+              <div id = "dot3" class="dot"></div>
+            </div>
+          </div>
+    </div>
+    <!--Section offer with all the prices. -->
+    <section id="offer">
+      <h4>Cennik</h4>
+      <div class="offer-cards">
+        <div class="card">
+          <div class="card-image"><i class="fa-solid fa-handshake"></i></div>
+          <h5>Cena za 1h kopania</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            repudiandae voluptatum distinctio, accusantium iure doloremque quos
+            est beatae eaque omnis ipsum vitae quis esse itaque ad dolores.
+          </p>
+          <h5>120 zł netto</h5>
+        </div>
+        <div class="card">
+          <div class="card-image"><i class="fa-solid fa-gear"></i></div>
+          <h5 class="price">Cen za 3-5h kopania </h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+            earum eius sint velit alias quia animi eum sapiente nobis ab id
+            inventore enim quidem, quod provident beatae, nam dolores possimus!
+          </p>
+          <h5 class="price">110 zł netto</h5>
+        </div>
+        <div class="card">
+          <div class="card-image"><i class="fa-solid fa-gears"></i></i></div>
+          <h5>Cena za 5h+ kopania</h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+            aliquam excepturi veniam repellendus beatae hic nostrum nihil, quidem
+            praesentium! Nihil repellat omnis quaerat et.
+          </p>
+          <h5 class="price">Do ustalenia</h5>
+        </div>
+      </div>  
+    </section>
+    <!--Section footer with contact and links to all social media sites.-->
+    <footer id="contact">
+      <h6>Skontaktuj się z nami</h5>
+      <ul class="social-icon">
+        <li>
+          <a href="mailto:argon11@wp.pl"><i class="fa-regular fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/uslugi.minikoparka.argon/"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="tel:+48 665-612-056"><i class="fa-solid fa-phone"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
