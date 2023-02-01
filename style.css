@@ -7,7 +7,7 @@
 
 :root {
   --grey: rgb(138, 137, 138);
-  --red: rgb(221, 54, 54);
+  --red: rgb(236, 81, 81);
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 /* Nav styling */
 
 .logo {
-  margin-top: 20px;
+  margin-top: 5px;
   padding-top: 30px;
   width: 13em;
 }
@@ -48,7 +48,7 @@ nav a {
   font-size: 1.5rem;
   font-weight: bold;
   position: relative;
-  padding: 0.2em;
+  padding: 0.5em 0.5em 0.3em 0.5em;
   color: var(--grey);
 }
 
@@ -155,6 +155,10 @@ h2 {
   .burger:hover {
     background-color: var(--red);
     border-radius: 10px;
+  }
+
+  .logo {
+    width: 10em;
   }
 
   nav ul {
@@ -306,7 +310,7 @@ h3 {
 }
 
 h4 {
-  color: var(--red);
+  color: var(--grey);
   font-size: 2em;
   display: flex;
   justify-content: center;
@@ -314,22 +318,22 @@ h4 {
 }
 
 .offer-cards {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
 }
 
 .card {
-  background-color: var(--red);
+  background-color: var(--grey);
   width: 250px;
-  height: 400px;
+  height: 150px;
   margin: 10px;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .card:hover {
-  background-color: var(--grey);
+  background-color: var(--red);
   transform: scale(1.05);
   transition: all 1s ease;
 }
@@ -340,11 +344,11 @@ h4 {
   font-size: 50px;
   display: flex;
   justify-content: center;
-  color: var(--grey);
+  color: var(--red);
 }
 
 .card:hover .card-image {
-  color: var(--red);
+  color: var(--grey);
 }
 
 .card h5 {
@@ -362,7 +366,7 @@ h4 {
 }
 
 .card button {
-  background-color: var(--grey);
+  background-color: var(--red);
   border: none;
   font-size: 20px;
   padding: 5px;
@@ -402,12 +406,12 @@ footer {
   bottom: 0;
   width: 100%;
   height: auto;
-  background: var(--grey);
+  background: var(--red);
   padding: 20px 50px;
 }
 
 h6 {
-  color: var(--red);
+  color: var(--grey);
   font-size: 1.5em;
   display: flex;
   justify-content: center;
@@ -436,5 +440,5 @@ footer .social-icon li a {
 
 footer .social-icon li a:hover {
   transform: translateY(-10px);
-  color: var(--red);
+  color: var(--grey);
 }
