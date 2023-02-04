@@ -19,9 +19,9 @@ body {
 /* Nav styling */
 
 .logo {
-  margin-top: 5px;
+  margin-top: 40px;
   padding-top: 30px;
-  width: 13em;
+  width: 10em;
 }
 
 nav {
@@ -147,40 +147,55 @@ h2 {
 /* Media queries for nav and main */
 
 @media only screen and (max-width: 1024px) {
+  .logo {
+    display: none;
+  }
+
   .burger {
     display: block;
     transition: 0.7s ease-in-out;
   }
 
-  .burger:hover {
+  .burger.active .line:first-child {
+    transform: translateY(-300px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    transform: rotate(-405deg) translateY(9px);
     background-color: var(--red);
-    border-radius: 10px;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-320deg) translateY(-9px);
+    background-color: var(--red);
   }
 
   .logo {
     width: 10em;
   }
 
-  nav ul {
-    position: absolute;
-    right: 0;
-    top: 8vh;
-    background-color: var(--red);
-    height: 92vh;
-    flex-direction: column;
-    text-align: center;
-    transform: translate(100%);
-  }
-
-  nav ul.active {
-    transform: translate(0%);
-    transition: 1s;
-  }
-
   nav a {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
     letter-spacing: 2px;
+  }
+
+  #navMenu {
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    background-color: var(--grey);
+    height: 90vh;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0;
+    display: none;
+  }
+
+  #navMenu.menu-visible {
+    display: flex;
+    opacity: 1;
   }
 
   #main {
@@ -193,28 +208,49 @@ h2 {
 }
 
 @media only screen and (max-width: 760px) {
+  .services li {
+    font-size: 20px;
+  }
+
+  .services li i {
+    font-size: 40px;
+  }
+
   nav ul {
     width: 100%;
     z-index: 1;
   }
+
   h1 {
     font-size: 50px;
     transition: 0.5s;
   }
 }
 @media only screen and (max-width: 450px) {
+  .services li {
+    font-size: 13px;
+  }
+
+  .services li i {
+    font-size: 30px;
+  }
+
   #main {
     margin: 0 auto;
   }
   h1 {
-    font-size: 30px;
+    font-size: 40px;
     transition: 0.5s;
+  }
+
+  .main-photo {
+    width: 250px;
   }
 }
 
 /* about section styling */
 #about {
-  height: 400px;
+  height: 1000px;
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
@@ -228,16 +264,46 @@ h3 {
   cursor: default;
 }
 
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.services li {
+  list-style: none;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services li i {
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.service {
+  width: calc(100% / 3 - 20px);
+  height: 150px;
+  margin: 10px;
+}
+
 #slider {
-  width: 768px;
-  height: 420px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 #slider #top-row {
-  width: 768px;
-  height: 420px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -246,7 +312,6 @@ h3 {
 
 #slider .slide {
   display: none;
-  width: 100%;
   flex: 1;
 }
 
@@ -287,7 +352,28 @@ h3 {
 
 /* about media queries */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
+  #slider #top-row {
+    background-size: cover;
+    background-position: center;
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  h3 {
+    font-size: 25px;
+  }
+
+  .services li {
+    font-size: 20px;
+  }
+
+  .services li i {
+    font-size: 40px;
+  }
+
   .about-describe {
     display: flex;
     flex-wrap: wrap;
@@ -299,6 +385,21 @@ h3 {
   .about-describe p {
     margin-bottom: 10px;
     margin-right: 0;
+  }
+
+  #top-row {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .services li {
+    font-size: 13px;
+  }
+
+  .services li i {
+    font-size: 30px;
   }
 }
 
@@ -318,7 +419,7 @@ h4 {
 }
 
 .offer-cards {
-  height: 50vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
 }
@@ -399,9 +500,25 @@ h4 {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .card {
+    background-color: var(--grey);
+    width: 200px;
+    height: 120px;
+  }
+
+  .card h5 {
+    font-size: 15px;
+  }
+  .card-image {
+    font-size: 40px;
+  }
+}
+
 /* Footer styling */
 
 footer {
+  margin-top: 100px;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -441,4 +558,20 @@ footer .social-icon li a {
 footer .social-icon li a:hover {
   transform: translateY(-10px);
   color: var(--grey);
+}
+
+/* footer media queries */
+
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 300px;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  footer .social-icon li a {
+    font-size: 1.5em;
+  }
 }

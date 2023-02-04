@@ -7,6 +7,10 @@ burgerIcon.addEventListener('click', function () {
   burgerIcon.classList.toggle('active');
 });
 
+burgerIcon.addEventListener('click', function () {
+  mobileNav.classList.toggle('menu-visible');
+});
+
 // slider with photos
 
 let activeSliderNumber = 1;

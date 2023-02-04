@@ -20,9 +20,9 @@
     <!--Navigation with links to specific page elements. -->
     <nav>
       <img class="logo" src="Argon Darcy.png" alt="Logo firmy Argon przedstawiajace mini koparke" />
-      <ul>
-        <li><a href="index.html#main" class="nav-item">Strona główna</a></li>
-        <li><a href="index.html#about" class="nav-item">Nasze prace</a></li>
+      <ul id="navMenu">
+        <li><a href="index.html#main" class="nav-item">Usługi</a></li>
+        <li><a href="index.html#about" class="nav-item">Wykonane</a></li>
         <li><a href="index.html#offer" class="nav-item">Cennik</a></li>
         <li><a href="index.html#contact" class="nav-item">Kontakt</a></li>
       </ul>
@@ -40,7 +40,15 @@
     </header>
     <!--Section about with work-->
     <div id="about">
-      <h3>Wykonane prace</h3>
+      <h3>Usługi i wykonane prace</h3>
+      <ul class="services">
+        <li class="service"><i class="fa-solid fa-bore-hole"></i><br>Odwierty</li>
+        <li class="service"><i class="fa-solid fa-person-digging"></i><br>Wykopy</li>
+        <li class="service"><i class="fa-sharp fa-solid fa-faucet"></i><br>Przyłącza sieci<li>
+        <li class="service"><i class="fa-solid fa-ruler"></i><br>Równanie i niwelacje terenu</li>
+        <li class="service"><i class="fa-sharp fa-solid fa-house-chimney"></i><br>Drenaż wokół domu</li>
+        <li class="service"><i class="fa-solid fa-house-crack"></i><br>Rozbiórka budynków</li>
+      </ul>
         <div id="slider">
           <div id="top-row">
             <img class="arrow arrow-left" id="arrow-left" src="arrow-left.png" alt="" />
