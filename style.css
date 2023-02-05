@@ -531,6 +531,7 @@ h6 {
   display: flex;
   justify-content: center;
   cursor: default;
+  text-align: center;
 }
 
 footer .social-icon {
@@ -558,6 +559,17 @@ footer .social-icon li a:hover {
   color: var(--red);
 }
 
+footer p {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 17px;
+  color: rgb(236, 81, 81);
+}
+
+footer a {
+  color: rgb(236, 81, 81);
+}
+
 /* footer media queries */
 
 @media only screen and (max-width: 550px) {
@@ -566,10 +578,15 @@ footer .social-icon li a:hover {
   }
 
   h6 {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   footer .social-icon li a {
     font-size: 1.5em;
+  }
+
+  footer p {
+    font-size: 8px;
+    color: rgb(236, 81, 81);
   }
 }
