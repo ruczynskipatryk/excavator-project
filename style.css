@@ -96,7 +96,7 @@ a:hover::after {
 /* main styling */
 
 #main {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-color: white;
   display: flex;
@@ -109,7 +109,6 @@ a:hover::after {
 }
 
 h1 {
-  margin-top: 50px;
   color: var(--grey);
   font-size: 70px;
   transition: 2s ease-in-out;
@@ -129,19 +128,21 @@ h1:hover span {
   transition: 0.5s;
 }
 
-h2 {
-  font-size: 20px;
-  transition: 2s ease-in-out;
+#main h2 {
+  font-size: 25px;
+  transition: 1s ease-in-out;
+  color: var(--grey);
 }
 
 .main-photo {
   padding-top: 25px;
-  width: 40%;
+  width: 30%;
   opacity: 50%;
   border-radius: 10px;
   z-index: 0;
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 /* Media queries for nav and main */
@@ -223,20 +224,21 @@ h2 {
   }
 
   .main-photo {
-    width: 250px;
+    width: 200px;
   }
 }
 
 /* about section styling */
 #about {
-  height: 1000px;
-  margin-bottom: 200px;
+  height: 1500px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 h3 {
+  margin-top: 70px;
   text-align: center;
   margin-bottom: 20px;
   font-size: 40px;
@@ -244,13 +246,58 @@ h3 {
   color: var(--grey);
 }
 
+.excavator {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+.excavator-specification {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+.excavator-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.takeuchi {
+  border-radius: 20px;
+  height: 70%;
+  width: 70%;
+}
+
+.excavator h2 {
+  margin-left: 20px;
+  font-size: 20px;
+  display: flex;
+}
+
+.excavator ul {
+  margin-left: 40px;
+  list-style: square;
+}
+
+.excavator li::marker {
+  color: var(--red);
+}
+
 .services {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  height: 100vh;
-  margin-bottom: 50px;
+  height: 70vh;
+}
+
+.services ul {
+  display: flex;
+  align-items: center;
 }
 
 .services li:hover {
@@ -260,14 +307,12 @@ h3 {
 
 .services li {
   list-style: none;
-  font-size: 30px;
-  display: flex;
+  font-size: 25px;
   flex-direction: column;
-  text-align: center;
 }
 
 .services li i {
-  font-size: 50px;
+  font-size: 40px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -277,22 +322,18 @@ h3 {
   width: calc(100% / 3 - 20px);
   height: 150px;
   margin: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 #slider {
   width: 100%;
-  height: 500px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#lides-container {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
 }
 
 #slider #top-row {
@@ -350,9 +391,22 @@ h3 {
   cursor: pointer;
 }
 
+#slider p {
+  color: var(--grey);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+#slider p a {
+  color: var(--red);
+}
 /* about media queries */
 
 @media only screen and (max-width: 1024px) {
+  .excavator {
+    grid-template-columns: 1fr;
+  }
   h3 {
     font-size: 25px;
   }
@@ -388,6 +442,15 @@ h3 {
     display: none;
   }
 }
+@media only screen and (max-width: 600px) {
+  .excavator h2 {
+    font-size: 20px;
+  }
+
+  .excavator ul {
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width: 450px) {
   .services li {
     font-size: 13px;
@@ -396,13 +459,16 @@ h3 {
   .services li i {
     font-size: 30px;
   }
+
+  #slider p {
+    font-size: 13px;
+  }
 }
 
 /* offer section styling */
 
 #offer {
-  margin-top: 100px;
-  height: 100vh;
+  height: 30vh;
 }
 
 h4 {
@@ -486,7 +552,7 @@ h4 {
 
 @media only screen and (max-width: 800px) {
   #offer {
-    height: 1500px;
+    height: 500px;
   }
   .offer-cards {
     display: flex;
@@ -516,7 +582,6 @@ h4 {
 /* Footer styling */
 
 footer {
-  margin-top: 100px;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -573,10 +638,6 @@ footer a {
 /* footer media queries */
 
 @media only screen and (max-width: 550px) {
-  footer {
-    margin-top: 250px;
-  }
-
   h6 {
     font-size: 0.8em;
   }
