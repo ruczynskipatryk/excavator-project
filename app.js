@@ -29,7 +29,7 @@ let showSlide = (slideNumber) => {
 };
 
 let showNextSlide = () => {
-  if (activeSliderNumber === 3) {
+  if (activeSliderNumber === 9) {
     activeSliderNumber = 1;
   } else {
     activeSliderNumber = activeSliderNumber + 1;
@@ -39,14 +39,14 @@ let showNextSlide = () => {
 
 let showPreviousSlide = () => {
   if (activeSliderNumber === 1) {
-    activeSliderNumber = 3;
+    activeSliderNumber = 9;
   } else {
     activeSliderNumber = activeSliderNumber - 1;
   }
   showSlide(activeSliderNumber);
 };
 
-for (let i = 1; i <= 3; i++) {
+for (let i = 1; i <= 9; i++) {
   let showSlideI = () => {
     showSlide(i);
   };
