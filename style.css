@@ -7,7 +7,7 @@
 
 :root {
   --grey: rgb(138, 137, 138);
-  --red: rgb(236, 81, 81);
+  --red: #9c1923;
 }
 
 body {
@@ -137,7 +137,7 @@ h1:hover span {
 
 .main-photo {
   padding-top: 25px;
-  width: 30%;
+  width: 300px;
   opacity: 50%;
   border-radius: 10px;
   z-index: 0;
@@ -155,7 +155,7 @@ h1:hover span {
 
   .burger {
     display: block;
-    transition: 1s ease-in-out;
+    transition: 5s ease-in-out;
   }
   .burger.active .line:first-child {
     transform: translateY(-300px);
@@ -201,6 +201,7 @@ h1:hover span {
     text-align: center;
     width: 50%;
     transition: 2s;
+    margin-left: 50px;
   }
 }
 
@@ -262,6 +263,7 @@ h3 {
   flex-direction: column;
   margin-right: 50px;
   justify-content: center;
+  align-items: center;
 }
 
 .excavator-photo {
@@ -279,6 +281,7 @@ h3 {
   margin-left: 20px;
   font-size: 20px;
   display: flex;
+  align-self: center;
 }
 
 .excavator ul {
@@ -407,6 +410,9 @@ h3 {
 /* about media queries */
 
 @media only screen and (max-width: 1024px) {
+  #about {
+    margin-top: 300px;
+  }
   .excavator {
     grid-template-columns: 1fr;
   }
@@ -455,6 +461,10 @@ h3 {
   }
 }
 @media only screen and (max-width: 450px) {
+  #about {
+    margin-top: 50px;
+  }
+
   .services li {
     font-size: 13px;
   }
@@ -465,6 +475,10 @@ h3 {
 
   #slider p {
     font-size: 13px;
+  }
+
+  .excavator h2 {
+    font-size: 18px;
   }
 }
 
@@ -585,11 +599,12 @@ h4 {
 /* Footer styling */
 
 footer {
+  margin-top: 50px;
   position: relative;
   bottom: 0;
   width: 100%;
   height: auto;
-  background: var(--grey);
+  background: rgba(90, 87, 87, 0.3);
   padding: 20px 50px;
 }
 
@@ -631,11 +646,11 @@ footer p {
   margin-top: 40px;
   text-align: center;
   font-size: 17px;
-  color: rgb(236, 81, 81);
+  color: var(--red);
 }
 
 footer a {
-  color: rgb(236, 81, 81);
+  color: var(--red);
 }
 
 /* footer media queries */
@@ -651,6 +666,6 @@ footer a {
 
   footer p {
     font-size: 8px;
-    color: rgb(236, 81, 81);
+    color: var(--red);
   }
 }
