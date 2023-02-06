@@ -264,6 +264,7 @@ h3 {
   margin-right: 50px;
   justify-content: center;
   align-items: center;
+  cursor: default;
 }
 
 .excavator-photo {
@@ -402,6 +403,7 @@ h3 {
   display: flex;
   text-align: center;
   flex-direction: column;
+  cursor: default;
 }
 
 #slider p a {
