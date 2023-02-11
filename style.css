@@ -408,6 +408,7 @@ h3 {
 
 #slider p a {
   color: var(--red);
+  text-decoration: none;
 }
 /* about media queries */
 
@@ -645,7 +646,7 @@ footer .social-icon li a:hover {
 }
 
 footer p {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   font-size: 17px;
   color: var(--red);
@@ -653,21 +654,22 @@ footer p {
 
 footer a {
   color: var(--red);
+  text-decoration: none;
 }
 
 /* footer media queries */
 
 @media only screen and (max-width: 550px) {
   h6 {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   footer .social-icon li a {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   footer p {
-    font-size: 8px;
+    font-size: 9px;
     color: var(--red);
   }
 }
