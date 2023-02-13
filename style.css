@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --grey: rgb(138, 137, 138);
   --red: rgb(221, 54, 54);
