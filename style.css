@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 html{
-  scroll-behavior: smoth:;
+  scroll-behavior: smooth;
 }
 :root {
   --grey: rgb(138, 137, 138);
