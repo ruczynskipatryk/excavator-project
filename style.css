@@ -336,16 +336,16 @@ h3 {
   justify-content: center;
 }
 
-#slider {
+/* #slider {
   width: 100%;
   height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-#slider #top-row {
+/* #slider #top-row {
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -398,8 +398,8 @@ h3 {
 .arrow,
 .dot {
   cursor: pointer;
-}
-
+} */
+/* 
 #slider p {
   color: var(--grey);
   display: flex;
@@ -411,7 +411,7 @@ h3 {
 #slider p a {
   color: var(--red);
   text-decoration: none;
-}
+} */
 /* about media queries */
 
 @media only screen and (max-width: 1024px) {
@@ -677,3 +677,99 @@ footer a {
     color: var(--red);
   }
 }
+
+/* Slider new One */
+/*Nowy Slider Css */
+
+@media only screen and (max-width: 800px) {
+  #slides  {
+    width: 22%;
+    height: 25px;
+  }
+}
+p{
+  text-align: center;
+  margin-top:10px;
+  
+}
+
+.slides {
+ 
+  padding: 0;
+  width: 609px;
+  height: 420px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+  top: 0;
+  opacity: 0;
+  width: 609px;
+  height: 420px;
+  display: block;
+  position: absolute;
+
+  transform: scale(0);
+
+  transition: all .7s ease-in-out;
+}
+
+.slide img {
+width: 100%;
+height: 100%;
+}
+
+.nav label {
+  width: 16vh;
+  height: 100%;
+  display: none;
+  position: absolute;
+
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+
+  transition: opacity .2s;
+
+  color: #FFF;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 380px;
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+  opacity: 1;
+
+  transform: scale(1);
+
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+
+/* Slider END */
